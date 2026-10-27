@@ -3,6 +3,7 @@ import {createApp} from 'vue';
 import router from './router';
 import App from './components/App.vue';
 import PrimeVue from 'primevue/config';
+import { ZiggyVue } from 'ziggy-js'
 import {
     Button,
     Column,
@@ -26,6 +27,7 @@ import Lara from '@primeuix/themes/aura';
 
 const app = createApp(App)
 
+app.use(ZiggyVue)
 app.use(router)
 
 app.use(PrimeVue, {
